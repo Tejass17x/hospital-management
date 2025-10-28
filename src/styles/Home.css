@@ -1,0 +1,10 @@
+.page-home {
+  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 60%);
+}
+.page-home .hero-title {
+  letter-spacing: -0.02em;
+}
+.page-home .card {
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+}
