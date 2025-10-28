@@ -8,8 +8,8 @@ export function Home() {
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">Compassionate Healthcare, Modern Management</h1>
           <p className="mt-4 text-gray-600">Book appointments, manage patients, and streamline hospital operations with HM Care.</p>
           <div className="mt-8 flex gap-4">
-            <Link to="/appointments" className="px-6 py-3 bg-brand text-white rounded-md shadow-sm hover:shadow transition">Book Appointment</Link>
-            <Link to="/doctors" className="px-6 py-3 bg-gray-900/5 text-gray-900 rounded-md hover:bg-gray-900/10 transition">Find Doctors</Link>
+            <Link to="/appointments" className="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white rounded-md shadow-sm transition">Book Appointment</Link>
+            <Link to="/doctors" className="px-6 py-3 bg-brand-50 text-brand-700 rounded-md hover:bg-brand-100 transition">Find Doctors</Link>
           </div>
         </div>
         <div className="bg-white border rounded-xl p-6 shadow-md">
