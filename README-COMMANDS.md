@@ -19,17 +19,6 @@ npm run build
 npm run preview
 ```
 
-## GitHub Upload
-```bash
-# Initialize repo (if not already)
-git init
-# Add files
-git add .
-# First commit
-git commit -m "Initial hospital management app (React + TS + Tailwind)"
-# Set remote
-git remote add origin https://github.com/Tejass17x/hospital-management.git
-# Push
-git branch -M main
-git push -u origin main
-```
+s
+
+$powershell -NoProfile -ExecutionPolicy Bypass -Command "cd 'C:\Users\vboxuser\Desktop\HM\hm-hospital'; $proc = Get-Process -Name node -ErrorAction SilentlyContinue; npm run dev -- --host"

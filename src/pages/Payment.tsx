@@ -37,7 +37,7 @@ export function Payment() {
           <label className="block text-sm text-gray-700 mb-1">Amount ($)</label>
           <input type="number" className="w-full border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-brand/30" value={form.amount} onChange={(e) => handleChange('amount', Number(e.target.value))} />
         </div>
-        <button onClick={handlePay} disabled={status==='processing'} className="w-full px-4 py-2 bg-brand text-white rounded-md disabled:opacity-60 shadow hover:shadow-md transition">
+        <button onClick={handlePay} disabled={status==='processing'} className="w-full px-5 py-3 bg-brand text-white rounded-md disabled:opacity-60 shadow hover:shadow-md transition sticky bottom-4">
           {status === 'processing' ? 'Processing...' : 'Pay Now'}
         </button>
         {status === 'success' && <div className="text-green-600">Payment successful. Receipt sent to {form.email}.</div>}
