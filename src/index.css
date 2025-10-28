@@ -2,17 +2,4 @@
 
 :root {
   --brand: #0ea5e9;
-  --bg: #f8fafc;
-  --fg: #0f172a;
-}
-
-[data-theme="dark"] {
-  --brand: #38bdf8;
-  --bg: #0b1220;
-  --fg: #e5e7eb;
-}
-
-body {
-  background: var(--bg);
-  color: var(--fg);
 }

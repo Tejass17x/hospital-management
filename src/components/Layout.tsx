@@ -1,11 +1,6 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 
 export function Layout() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
-  }, [theme])
   return (
     <div className="min-h-screen flex flex-col bg-[linear-gradient(180deg,#f8fafc,white)]">
       <header className="bg-white/80 backdrop-blur border-b sticky top-0 z-40">
@@ -21,9 +16,6 @@ export function Layout() {
             <NavLink to="/contact" className={({ isActive }) => isActive ? 'text-brand font-medium' : 'text-gray-600 hover:text-gray-900'}>Contact</NavLink>
             <NavLink to="/admin" className={({ isActive }) => isActive ? 'text-brand font-medium' : 'text-gray-600 hover:text-gray-900'}>Admin</NavLink>
           </nav>
-          <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} className="ml-4 px-3 py-1.5 rounded border text-sm">
-            {theme === 'light' ? 'Dark' : 'Light'} mode
-          </button>
         </div>
       </header>
       <main className="flex-1">
